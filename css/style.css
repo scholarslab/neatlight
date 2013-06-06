@@ -5,6 +5,13 @@
  * @copyright   2012 Rector and Board of Visitors, University of Virginia
  * @license     http://www.apache.org/licenses/LICENSE-2.0.html
  */
+/* vim: set expandtab tabstop=2 shiftwidth=2 softtabstop=2 cc=76; */
+/**
+ * @package     omeka
+ * @subpackage  neatline-NeatLight
+ * @copyright   2012 Rector and Board of Visitors, University of Virginia
+ * @license     http://www.apache.org/licenses/LICENSE-2.0.html
+ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,7 +21,8 @@ div.container {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 4em; }
   div.container:before, div.container:after {
     content: " ";
     display: table; }
@@ -24,16 +32,17 @@ div.container {
 div.exhibit {
   display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
+  margin-right: 5.30398%;
+  width: 47.34801%; }
   div.exhibit:last-child {
     margin-right: 0; }
 
 div.narrative {
   display: block;
   float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
+  margin-right: 5.30398%;
+  width: 47.34801%;
+  margin-right: 0; }
   div.narrative:last-child {
     margin-right: 0; }
   div.narrative h1.title {

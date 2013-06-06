@@ -8,11 +8,15 @@
  * @license     http://www.apache.org/licenses/LICENSE-2.0.html
  */
 
+
 @import 'bourbon/bourbon';
+@import 'grid-settings';
 @import 'neat/neat';
+
 
 div.container {
   @include outer-container;
+  margin-top: 4em;
 }
 
 div.exhibit {
@@ -21,6 +25,7 @@ div.exhibit {
 
 div.narrative {
   @include span-columns(6);
+  @include omega();
 
   h1.title {
     margin-top: 0;
