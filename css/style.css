@@ -38,7 +38,8 @@ div.exhibit {
   div.exhibit:last-child {
     margin-right: 0; }
   div.exhibit #neatline {
-    position: fixed; }
+    position: fixed;
+    top: 0; }
 
 div.narrative {
   display: block;
