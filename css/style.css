@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 /* vim: set expandtab tabstop=2 shiftwidth=2 softtabstop=2 cc=76; */
 /**
  * @package     omeka
@@ -17,12 +18,18 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  margin: 0; }
+  body ::selection {
+    background: #7b6089;
+    color: white; }
+
 div.container {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4em; }
+  margin-top: 3em; }
   div.container:before, div.container:after {
     content: " ";
     display: table; }
@@ -32,8 +39,8 @@ div.container {
 div.exhibit {
   display: block;
   float: left;
-  margin-right: 5.30398%;
-  width: 47.34801%;
+  margin-right: 2.35765%;
+  width: 48.82117%;
   min-height: 1px; }
   div.exhibit:last-child {
     margin-right: 0; }
@@ -44,10 +51,14 @@ div.exhibit {
 div.narrative {
   display: block;
   float: left;
-  margin-right: 5.30398%;
-  width: 47.34801%;
-  margin-right: 0; }
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+  font-family: "Lora";
+  font-size: 18px; }
   div.narrative:last-child {
     margin-right: 0; }
   div.narrative h1.title {
+    font-size: 2.6em;
+    text-align: center;
     margin-top: 0; }

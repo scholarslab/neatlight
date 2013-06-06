@@ -9,14 +9,24 @@
  */
 
 
+@import 'fonts';
 @import 'bourbon/bourbon';
-@import 'grid-settings';
 @import 'neat/neat';
 
 
+body {
+  margin: 0;
+
+  ::selection {
+    background: tint(#5b396c, 20%);
+    color: white;
+  }
+
+}
+
 div.container {
   @include outer-container;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 div.exhibit {
@@ -33,8 +43,12 @@ div.exhibit {
 div.narrative {
   @include span-columns(6);
   @include omega();
+  font-family: "Lora";
+  font-size: 18px;
 
   h1.title {
+    font-size: 2.6em;
+    text-align: center;
     margin-top: 0;
   }
 
