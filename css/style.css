@@ -33,9 +33,12 @@ div.exhibit {
   display: block;
   float: left;
   margin-right: 5.30398%;
-  width: 47.34801%; }
+  width: 47.34801%;
+  min-height: 1px; }
   div.exhibit:last-child {
     margin-right: 0; }
+  div.exhibit #neatline {
+    position: fixed; }
 
 div.narrative {
   display: block;

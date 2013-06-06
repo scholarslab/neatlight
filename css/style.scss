@@ -21,6 +21,12 @@ div.container {
 
 div.exhibit {
   @include span-columns(6);
+  min-height: 1px;
+
+  #neatline {
+    position: fixed;
+  }
+
 }
 
 div.narrative {
