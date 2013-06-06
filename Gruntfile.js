@@ -14,7 +14,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.initConfig({
-    // TODO
+
+    sass: {
+      dist: {
+        files: {
+          'css/style.css': 'css/*.scss'
+        }
+      }
+    },
+
+    watch: {
+      dist: {
+        files: 'css/*.scss',
+        tasks: ['sass']
+      }
+    }
+
   });
 
 };

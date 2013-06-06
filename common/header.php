@@ -12,6 +12,7 @@
 
     <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
 
+    <?php queue_css_file('style'); ?>
     <?php echo head_css(); ?>
     <?php echo head_js(); ?>
 

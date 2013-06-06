@@ -1,0 +1,3 @@
+body {
+  background: -webkit-linear-gradient( red, green) left repeat;
+  background: linear-gradient( red, green) left repeat; }
