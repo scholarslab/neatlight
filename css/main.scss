@@ -1,0 +1,8 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$max-width: em(1400);
+
+div.container {
+  @include outer-container;
+}
