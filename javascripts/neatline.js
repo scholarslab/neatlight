@@ -10,12 +10,18 @@
 
 $(function() {
 
-  var divs = $('#neatline, #neatline-map, div.narrative');
+  var exhibit = $('#neatline, #neatline-map');
+  var wrapper = $('div.narrative');
 
   // Position the exhibit.
   var position = function() {
-    divs.css({ height: $(window).height() });
+
+    var h = $(window).height();
+    var w = wrapper.width();
+
+    exhibit.css({ height: h, width: w });
     Neatline.execute('MAP:updateSize');
+
   };
 
   // Listen for resize.

@@ -2,7 +2,9 @@
   'title' => nl_getExhibitField('title'))
 ); ?>
 
-<?php echo nl_getExhibitMarkup(); ?>
+<div class="exhibit">
+  <?php echo nl_getExhibitMarkup(); ?>
+</div>
 
 <div class="narrative">
   <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>

@@ -13,24 +13,51 @@
  * @copyright   2012 Rector and Board of Visitors, University of Virginia
  * @license     http://www.apache.org/licenses/LICENSE-2.0.html
  */
-body {
-  margin: 0; }
-
-div.narrative {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: absolute;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+  body ::selection {
+    background: #7b6089;
+    color: white; }
+
+div.container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em; }
+  div.container:before, div.container:after {
+    content: " ";
+    display: table; }
+  div.container:after {
+    clear: both; }
+
+div.exhibit {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  min-height: 1px; }
+  div.exhibit:last-child {
+    margin-right: 0; }
+  div.exhibit #neatline {
+    position: fixed;
+    top: 0; }
+
+div.narrative {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
   font-family: "Lora";
-  font-size: 18px;
-  background: white;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  opacity: 0.9;
-  padding: 2em;
-  width: 30%;
-  right: 4em;
-  top: 0; }
+  font-size: 18px; }
+  div.narrative:last-child {
+    margin-right: 0; }
   div.narrative h1.title {
     font-size: 2.6em;
     text-align: center;
