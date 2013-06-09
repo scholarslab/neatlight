@@ -10,46 +10,72 @@
 
 
 @import 'fonts';
+@import 'colors';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
 
 body {
+
+  font-family: "Open Sans";
   margin: 0;
 
   ::selection {
-    background: tint(#5b396c, 20%);
+    background: $accent;
     color: white;
   }
 
 }
 
-div.container {
-  @include outer-container;
-  margin-top: 3em;
+div.exhibit {
+  float: left;
+  width: 60%;
 }
 
-div.exhibit {
-  @include span-columns(6);
-  min-height: 1px;
+div.narrative {
 
-  #neatline {
-    position: fixed;
-    top: 0;
+  float: right;
+  padding: 3em;
+  width: 40%;
+
+  font-size: 18px;
+  overflow-y: scroll;
+
+  h1.title {
+    font-family: Raleway;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 2em;
+  }
+
+  hr {
+    height: 1px;
+    color: gray;
+    background: gray;
+    font-size: 0;
+    border: 0;
+  }
+
+  #neatline-narrative {
+    line-height: 1.4em;
   }
 
 }
 
-div.narrative {
-  @include span-columns(6);
-  @include omega();
-  font-family: "Lora";
-  font-size: 18px;
+#static-bubble {
 
-  h1.title {
-    font-size: 2.6em;
-    text-align: center;
-    margin-top: 0;
+  div.title {
+    font-family: Raleway;
+    font-weight: 700;
+  }
+
+  a.close {
+    font-size: 2em;
+    line-height: 1em;
+    &:hover {
+      color: $accent;
+    }
   }
 
 }
