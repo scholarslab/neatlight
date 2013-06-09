@@ -9,73 +9,78 @@
  */
 
 
-@import 'fonts';
-@import 'colors';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import '_fonts';
+@import '_colors';
 
 
 body {
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 
   ::selection {
-    background: $accent;
+    background: $color-accent;
     color: white;
   }
 
 }
 
-div.exhibit {
-  float: left;
-  width: 60%;
-}
 
-div.narrative {
+body.neatline.show {
 
-  float: right;
-  padding: 3em;
-  width: 40%;
-
-  font-size: 18px;
-  overflow-y: scroll;
-
-  h1.title {
-    font-family: Raleway;
-    text-transform: uppercase;
-    margin-top: 0;
-    font-weight: 900;
-    font-size: 2em;
+  div.exhibit {
+    float: left;
+    width: 60%;
   }
 
-  hr {
-    height: 1px;
-    color: gray;
-    background: gray;
-    font-size: 0;
-    border: 0;
-  }
+  div.narrative {
 
-  #neatline-narrative {
-    line-height: 1.4em;
-  }
+    float: right;
+    padding: 3em;
+    width: 40%;
 
-}
+    font-size: 18px;
+    overflow-y: scroll;
 
-#static-bubble {
-
-  div.title {
-    font-family: Raleway;
-    font-weight: 700;
-  }
-
-  a.close {
-    font-size: 2em;
-    line-height: 1em;
-    &:hover {
-      color: $accent;
+    h1.title {
+      font-family: Raleway;
+      text-transform: uppercase;
+      margin-top: 0;
+      font-weight: 900;
+      font-size: 2em;
     }
+
+    hr {
+      height: 1px;
+      color: gray;
+      background: gray;
+      font-size: 0;
+      border: 0;
+    }
+
+    #neatline-narrative {
+      line-height: 1.4em;
+    }
+
+  }
+
+  #static-bubble {
+
+    div.title {
+      font-family: Raleway;
+      font-weight: 700;
+    }
+
+    a.close {
+      font-size: 2em;
+      line-height: 1em;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+
   }
 
 }
