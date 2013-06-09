@@ -1,6 +1,7 @@
 <?php echo head(array(
-  'title' => nl_getExhibitField('title'))
-); ?>
+  'title' => nl_getExhibitField('title'),
+  'bodyclass' => 'neatline show'
+)); ?>
 
 <div class="exhibit">
   <?php echo nl_getExhibitMarkup(); ?>
