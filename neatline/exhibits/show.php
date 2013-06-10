@@ -22,9 +22,9 @@
   <?php echo nl_getExhibitMarkup(); ?>
 </div>
 
-<div class="narrative">
+<div id="neatline-narrative" class="narrative">
   <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>
-  <?php echo nl_getNarrativeMarkup(); ?>
+  <?php echo nl_getExhibitField('narrative'); ?>
 </div>
 
 <?php echo foot(); ?>
