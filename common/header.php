@@ -23,8 +23,6 @@
       echo isset($title) ? ' | ' . $title : ''; ?>
     </title>
 
-    <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
-
     <?php queue_css_file('payloads/style'); ?>
     <?php echo head_css(); ?>
     <?php echo head_js(); ?>
@@ -32,5 +30,4 @@
   </head>
 
   <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
     <div class="container">

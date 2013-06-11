@@ -11,22 +11,22 @@
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
 
   grunt.initConfig({
 
-    sass: {
+    stylus: {
       dist: {
         files: {
-          'css/payloads/style.css': 'css/style.scss'
+          'css/payloads/style.css': 'css/**/*.styl'
         }
       }
     },
 
     watch: {
       dist: {
-        files: 'css/*.scss',
-        tasks: ['sass']
+        files: 'css/*.styl',
+        tasks: ['stylus']
       }
     }
 

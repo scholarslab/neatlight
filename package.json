@@ -4,7 +4,8 @@
   , "private": false
   , "devDependencies": {
       "grunt":                  ">= 0.4.0"
-    , "grunt-contrib-sass":     ">= 0.3.0"
+    , "grunt-contrib-stylus":   ">= 0.4.0"
     , "grunt-contrib-watch":    ">= 0.2.0"
+    , "nib":                    ">= 0.9.1"
   }
 }
