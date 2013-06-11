@@ -9,7 +9,8 @@
  */
 
 
-@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700")
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:300")
+@import url("http://fonts.googleapis.com/css?family=EB+Garamond")
 
 
 *
@@ -35,5 +36,18 @@ body.neatline.show
 
     h1.title
       margin-top 0
+      font-family "EB Garamond"
       font-weight 400
-      font-size 60px
+      font-size 70px
+
+    p
+      line-height 26px
+
+      &:first-of-type:first-letter
+        float left
+        margin 0 5px 5px 0
+        font-family "EB Garamond"
+        font-size 100px
+
+    [data-neatline-slug]
+      padding 3px 5px
