@@ -9,16 +9,54 @@
  */
 
 
-@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:300")
+// FONTS
+// ------------------------------------------------------------------------
+
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:100,300")
 @import url("http://fonts.googleapis.com/css?family=EB+Garamond")
 
+
+// VARIABLES
+// ------------------------------------------------------------------------
+
+$font-body = "Roboto Slab"
+$font-header = "EB Garamond"
+$color-accent = #21759b
+
+
+// GENERIC STYLES
+// ------------------------------------------------------------------------
 
 *
   box-sizing border-box
 
+  ::selection
+    background $color-accent
+    color white
+
+
 body
-  font-family "Roboto Slab"
+  font-weight 300
+  font-size 18px
+  font-family $font-body
   margin 0
+
+a
+  text-decoration none
+  color $color-accent
+
+  &:hover
+    text-decoration underline
+
+hr
+  height 1px
+  background black
+  font-size 0
+  border 0
+
+
+// EXHIBIT SHOW VIEW
+// ------------------------------------------------------------------------
 
 body.neatline.show
 
@@ -29,25 +67,53 @@ body.neatline.show
   div.narrative
     float right
     overflow-y scroll
-    padding 5em
+    padding 2em 5em
     width 40%
-    font-weight 300
-    font-size 18px
 
-    h1.title
-      margin-top 0
-      font-family "EB Garamond"
-      font-weight 400
-      font-size 70px
+    a.back
+      display inline-block
+      padding 5px 8px
+      margin-bottom 1em
+      font-size 16px
 
-    p
-      line-height 26px
+      .arrow
+        font-size 13px
 
-      &:first-of-type:first-letter
-        float left
-        margin 0 5px 5px 0
-        font-family "EB Garamond"
-        font-size 100px
+    div.content
 
-    [data-neatline-slug]
-      padding 3px 5px
+      h1.title
+        margin-top 0
+        font-family $font-header
+        font-weight 400
+        font-size 70px
+
+      p
+        line-height 26px
+
+        &.first:first-letter
+          float left
+          margin 0 5px 5px 0
+          font-family $font-header
+          font-size 100px
+
+      [data-neatline-slug]
+        padding 3px 5px
+
+  #static-bubble
+
+    div.title
+      font-weight 700
+
+    a.close
+      font-size 2em
+      line-height 0.8em
+
+      &:hover
+        color $color-accent
+
+
+// COLOPHON
+// ------------------------------------------------------------------------
+
+#colophon
+  font-size 0.8em

@@ -18,13 +18,25 @@
   'bodyclass' => 'neatline show'
 )); ?>
 
-<div class="exhibit">
-  <?php echo nl_getExhibitMarkup(); ?>
-</div>
+<!-- Exhibit -->
+<div class="exhibit"><?php echo nl_getExhibitMarkup(); ?></div>
 
 <div id="neatline-narrative" class="narrative">
-  <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>
-  <?php echo nl_getExhibitField('narrative'); ?>
+
+  <!-- Back Link -->
+  <a href="<?php echo html_escape(WEB_ROOT); ?>" class="back">
+    <span class="arrow">&larr;</span> View all Exhibits
+  </a>
+
+  <!-- Narrative -->
+  <div class="content">
+    <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>
+    <?php echo nl_getExhibitField('narrative'); ?>
+  </div>
+
+  <!-- Colophon -->
+  <?php echo common('colophon'); ?>
+
 </div>
 
 <?php echo foot(); ?>
