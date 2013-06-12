@@ -21,7 +21,7 @@
 
 $font-body = "Roboto Slab"
 $font-header = "EB Garamond"
-$color-accent = #21759b
+$color-accent = #006ebb
 
 
 // GENERIC STYLES
@@ -42,11 +42,10 @@ body
   margin 0
 
 a
-  text-decoration none
-  color $color-accent
+  color black
 
   &:hover
-    text-decoration underline
+    background lighten(yellow, 80%)
 
 hr
   height 1px
@@ -76,6 +75,7 @@ body.neatline.show
 
     a.back
       display inline-block
+      text-decoration none
       padding 5px 8px
       margin-bottom 1em
       font-size 16px
@@ -112,6 +112,7 @@ body.neatline.show
 
       &:hover
         color $color-accent
+        background none
 
 
 // COLOPHON

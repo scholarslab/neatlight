@@ -24,7 +24,7 @@
 <div id="neatline-narrative" class="narrative">
 
   <!-- Back Link -->
-  <a href="<?php echo html_escape(WEB_ROOT); ?>" class="back">
+  <a href="<?php echo url('neatline'); ?>" class="back">
     <span class="arrow">&larr;</span> View all Exhibits
   </a>
 
