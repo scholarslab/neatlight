@@ -10,7 +10,7 @@
 
 $(function() {
 
-  var content = $('#neatline, #neatline-map, div.narrative');
+  var content = $('div.exhibit, div.narrative');
 
   var position = function() {
     content.css('height', $(window).height());
