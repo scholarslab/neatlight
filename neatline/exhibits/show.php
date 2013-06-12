@@ -29,10 +29,8 @@
   </a>
 
   <!-- Narrative -->
-  <div class="content">
-    <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>
-    <?php echo nl_getExhibitField('narrative'); ?>
-  </div>
+  <h1 class="title"><?php echo nl_getExhibitField('title'); ?></h1>
+  <?php echo nl_getExhibitField('narrative'); ?>
 
   <!-- Colophon -->
   <?php echo common('colophon'); ?>

@@ -79,25 +79,23 @@ body.neatline.show
       .arrow
         font-size 13px
 
-    div.content
+    h1.title
+      margin-top 0
+      font-family $font-header
+      font-weight 400
+      font-size 70px
 
-      h1.title
-        margin-top 0
+    p
+      line-height 26px
+
+      &.first:first-letter
+        float left
+        margin 0 5px 5px 0
         font-family $font-header
-        font-weight 400
-        font-size 70px
+        font-size 100px
 
-      p
-        line-height 26px
-
-        &.first:first-letter
-          float left
-          margin 0 5px 5px 0
-          font-family $font-header
-          font-size 100px
-
-      [data-neatline-slug]
-        padding 3px 5px
+    [data-neatline-slug]
+      padding 3px 5px
 
   #static-bubble
 
