@@ -12,15 +12,17 @@
 // FONTS
 // ------------------------------------------------------------------------
 
-@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:100,300")
+@import url("http://fonts.googleapis.com/css?family=PT+Serif:400")
 @import url("http://fonts.googleapis.com/css?family=EB+Garamond")
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400")
 
 
 // VARIABLES
 // ------------------------------------------------------------------------
 
-$font-body = "Roboto Slab"
+$font-body = "PT Serif"
 $font-header = "EB Garamond"
+$font-mono = "Ubuntu Mono"
 $color-accent = #006ebb
 
 
@@ -36,22 +38,48 @@ $color-accent = #006ebb
 
 
 body
-  font-weight 300
-  font-size 16px
   font-family $font-body
+  font-size 18px
+  font-weight 300
   margin 0
 
 a
-  color black
+  text-decoration none
+  color $color-accent
 
   &:hover
-    background lighten(yellow, 80%)
+    text-decoration underline
 
 hr
   height 1px
   background black
   font-size 0
   border 0
+
+
+// EXHIBIT BROWSE
+// ------------------------------------------------------------------------
+
+body.neatline.browse
+  background darken(white, 1%)
+
+  div.container
+    font-size 1.2em
+    margin 3em auto
+    width 50%
+
+    h1.title
+      font-family $font-header
+      margin-bottom 0
+      font-size 80px
+
+    div.list
+
+      span.date
+        font-family $font-mono
+
+      span.title
+        margin-left 0.5em
 
 
 // EXHIBIT SHOW
@@ -70,12 +98,11 @@ body.neatline.show
   div.narrative
     float right
     overflow-y scroll
-    padding 2em 5em
+    padding 2em 3em
     width 40%
 
     a.back
       display inline-block
-      text-decoration none
       padding 5px 8px
       margin-bottom 1em
       font-size 16px
@@ -84,13 +111,13 @@ body.neatline.show
         font-size 13px
 
     h1.title
-      margin-top 0
+      margin 0 0 1em 0
       font-family $font-header
       font-weight 400
-      font-size 70px
+      font-size 40px
 
     p
-      line-height 26px
+      line-height 27px
 
       &.first:first-letter
         float left
@@ -103,8 +130,8 @@ body.neatline.show
 
   #static-bubble
 
-    div.title
-      font-weight 700
+    div.body
+      font-size 17px
 
     a.close
       font-size 2em
@@ -119,4 +146,4 @@ body.neatline.show
 // ------------------------------------------------------------------------
 
 #colophon
-  font-size 0.9em
+  font-size 16px

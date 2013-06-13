@@ -33,7 +33,7 @@
   <?php echo nl_getExhibitField('narrative'); ?>
 
   <!-- Colophon -->
-  <?php echo common('colophon'); ?>
+  <hr /><?php echo common('colophon'); ?>
 
 </div>
 

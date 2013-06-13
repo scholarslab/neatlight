@@ -12,5 +12,5 @@
 ?>
 
 <div id="colophon">
-  <hr /><?php echo get_theme_option('Footer Text'); ?>
+  <?php echo get_theme_option('Footer Text'); ?>
 </div>
