@@ -24,7 +24,7 @@
     <div class="exhibit">
 
       <span class="date">
-        <?php echo format_date($e->added); ?>
+        <?php echo format_date($e->added, 'FF'); ?>
       </span>
 
       <span class="title">
