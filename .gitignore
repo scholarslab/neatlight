@@ -3,7 +3,3 @@ node_modules
 .grunt
 .sass-cache
 pkg
-
-css/bourbon
-css/neat
-css/payloads
