@@ -37,10 +37,10 @@
     </div>
   <?php endforeach; ?>
 
-  <!-- Colophon -->
-  <?php echo common('colophon'); ?>
-
   </div>
 <?php endif; ?>
+
+<!-- Colophon -->
+<?php echo common('colophon'); ?>
 
 <?php echo foot(); ?>
