@@ -3,5 +3,3 @@ node_modules
 .grunt
 .sass-cache
 pkg
-
-css/payloads
